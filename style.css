@@ -1,0 +1,351 @@
+/* Gaya Dasar dan Reset */
+:root {
+    --primary-color: #007BFF; /* Biru */
+    --secondary-color: #06923E; /* Abu-abu */
+    --accent-color: #28A745; /* Hijau */
+    --text-color: #0F0E0E;
+    --bg-color: #F8F9FA;
+    --white-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* HEADER/NAVIGASI */
+header {
+    background-color: var(--white-color);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.header-actions .btn {
+    margin-left: 10px;
+}
+
+/* Tombol Dasar */
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.language-toggle {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.language-toggle:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 20px 5%;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(0, 123, 255, 0.1), rgba(255, 255, 255, 0.5));
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Featured Homes */
+.featured-homes h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.home-card {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.home-card:hover {
+    transform: translateY(-5px);
+}
+
+.home-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.home-card h3, .home-card p, .home-card button {
+    padding: 10px 15px;
+}
+
+.btn-detail {
+    width: 90%;
+    margin: 0 5% 15px;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.btn-detail:hover {
+    background-color: #1e7e34;
+}
+
+/* OWNER PROFILE */
+.owner-profile {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.owner-profile h2 {
+    margin-bottom: 30px;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid var(--primary-color);
+}
+
+.profile-text h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.profile-text p {
+    text-align: justify;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--text-color);
+    color: var(--white-color);
+    padding: 40px 5% 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.footer-brand, .footer-links, .footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-brand h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.footer-links h4, .footer-social h4 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.footer-links a {
+    color: var(--white-color);
+    display: block;
+    margin-top: 5px;
+}
+
+.footer-social a {
+    color: var(--white-color);
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid var(--secondary-color);
+}
+
+/* MODAL (Sign Up/Login) */
+.modal {
+    display: none; /* Sembunyikan secara default */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Background hitam semi-transparan */
+}
+
+.modal-content {
+    background-color: var(--white-color);
+    margin: 15% auto; /* 15% dari atas dan ditengah secara horizontal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#authForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#authForm button {
+    width: 100%;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        padding: 10px 0;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .header-actions {
+        margin-top: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-content {
+        padding: 20px;
+    }
+}

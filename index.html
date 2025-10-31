@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Setiady Group | Jual Beli Properti</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1 id="brandName">🏠 Setiady Group</h1>
+            </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" id="navHome">Beranda</a></li>
+                <li><a href="#featured" id="navModels">Model Rumah</a></li>
+                <li><a href="#contact" id="navContact">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="btn language-toggle" onclick="toggleLanguage()">ID / EN</button>
+            <button class="btn btn-secondary" id="signUpBtn">Sign Up</button>
+            <button class="btn btn-primary" id="loginBtn">Login</button>
+        </div>
+    </header>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modalTitle">Daftar</h2>
+            <form id="authForm">
+                <label for="authEmail" id="labelEmail">Email:</label>
+                <input type="email" id="authEmail" name="email" required>
+                <button type="submit" id="submitAuthBtn" class="btn btn-primary">Daftar</button>
+            </form>
+            <p id="authMessage" style="color: red; margin-top: 10px;"></p>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <h2 id="heroHeading">Temukan Rumah Impian Anda</h2>
+            <p id="heroText">Pilihan properti modern dan strategis hanya di Setiady Group.</p>
+            <button class="btn btn-primary" id="exploreBtn">Jelajahi Sekarang</button>
+        </section>
+
+        <section id="featured" class="featured-homes">
+            <h2 id="featuredHeading">Model Desain Rumah Unggulan</h2>
+            <div class="home-grid">
+                <div class="home-card">
+                    <img src="img/modern.jpg" alt="Rumah Minimalis">
+                    <h3 id="cardTitle1">Rumah Minimalis Modern</h3>
+                    <p id="cardPrice1">Mulai dari Rp 750 Juta</p>
+                    <button class="btn btn-detail" id="cardBtn1">Lihat Detail</button>
+                </div>
+                <div class="home-card">
+                    <img src="img/scandavia.jpg" alt="Rumah Skandinavia">
+                    <h3 id="cardTitle2">Gaya Skandinavia</h3>
+                    <p id="cardPrice2">Mulai dari Rp 1,2 Miliar</p>
+                    <button class="btn btn-detail" id="cardBtn2">Lihat Detail</button>
+                </div>
+                <div class="home-card">
+                    <img src="img/modern.jpg" alt="Rumah Kontemporer">
+                    <h3 id="cardTitle3">Kontemporer Mewah</h3>
+                    <p id="cardPrice3">Mulai dari Rp 2,5 Miliar</p>
+                    <button class="btn btn-detail" id="cardBtn3">Lihat Detail</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="owner-profile">
+            <h2 id="ownerHeading">Profil Perusahaan</h2>
+            <div class="profile-content">
+                <img src="img/logo.png" alt="Logo Setiady Group" class="profile-logo">
+                <div class="profile-text">
+                    <h3 id="profileName">Setiady Group</h3>
+                    <p id="profileDescription">Setiady Group adalah pengembang properti terkemuka yang berfokus pada pembangunan rumah-rumah modern, berkualitas, dan berlokasi strategis. Kami berkomitmen untuk mewujudkan impian kepemilikan rumah Anda.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="contact" class="footer-content">
+            <div class="footer-brand">
+                <h3 id="footerBrandTitle">🏠 Setiady Group</h3>
+                <p id="footerBrandText">Solusi Properti Terbaik Anda</p>
+            </div>
+            <div class="footer-links">
+                <h4 id="footerContactTitle">Hubungi Kami</h4>
+                <p><i class="fas fa-phone"></i> <span id="footerPhone">+62 574-321-760</span></p>
+                <a href="#" id="privacyLink">Kebijakan Privasi</a>
+            </div>
+            <div class="footer-social">
+                <h4 id="footerSocialTitle">Ikuti Kami</h4>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Setiady Group. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
